@@ -11,7 +11,7 @@
   ],
   "Slug": "volumetry__project_review_and_documentation",
   "Section": "post",
-  "thumbnail": "../../img/55676226-1146-4887-a7ae-a84ff0be30df.png",
+  "thumbnail": "/img/55676226-1146-4887-a7ae-a84ff0be30df.png",
   "comments": true
 }
 
@@ -25,16 +25,16 @@ Included below are some snippets from the new documentation:
 
 Displays a modeled "snake" distribution, which is based on a gaussian kernel extruded along a random spline. Demonstrates both slicing and projection operations, where a multidimensional model is projected, or flattened, along some axis to obtain a [marginal density](https://en.wikipedia.org/wiki/Marginal_distribution)
 
-![](../../img/7b98cb3a-1c90-495a-aede-14c017ad92df.png)
+![](/img/7b98cb3a-1c90-495a-aede-14c017ad92df.png)
 
 # [testVolumeEntropyModel](https://github.com/acharneski/volumetry/blob/master/src/test/java/com/simiacryptus/probabilityModel/Demo.java#L189)
 
 This demonstrates the effectiveness of this model-building technique applied to the "3d logistic map".
 
-![](../../img/020bf1aa-d46c-4457-ab58-fe019e072d55.png)
+![](/img/020bf1aa-d46c-4457-ab58-fe019e072d55.png)
 
 # [testSurfaceFiller](https://github.com/acharneski/volumetry/blob/master/src/test/java/com/simiacryptus/probabilityModel/Demo.java#L91)
 
 This demonstrates a unique application of the modeling technique, wherin we wish to find an equipotential surface. This is different from most optimization and numerical solver techniques since it not only has to converge on the solution, it has to fill and uniformly sample all applicable space as well.
 
-![](../../img/55676226-1146-4887-a7ae-a84ff0be30df.png)
+![](/img/55676226-1146-4887-a7ae-a84ff0be30df.png)

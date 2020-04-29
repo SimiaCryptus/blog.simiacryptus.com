@@ -13,7 +13,7 @@
   ],
   "Slug": "easy_deep_learning_on_aws_with_mindseye",
   "Section": "post",
-  "thumbnail": "../../img/111af205-83c1-495a-a9bc-ccac52cb96cf.png",
+  "thumbnail": "/img/111af205-83c1-495a-a9bc-ccac52cb96cf.png",
   "comments": true
 }
 
@@ -30,17 +30,17 @@ For a simple example, see [this demonstration code](https://github.com/SimiaCryp
 This adds easy access to cloud computing facilities, such as Amazon’s Deep Learning machine images which we can use to execute [MindsEye Art scripts](https://github.com/SimiaCryptus/mindseye-art). Using the notebook logging api, we easily produce reports in markdown, html, and pdf as well as providing interactive http endpoints. This is demonstrated in the following applications, which can be executed in local or AWS mode:
 
 
-![](../../img/ac9c9f75-8ed0-4e4f-8fc2-ac4432eb4922.gif)
+![](/img/ac9c9f75-8ed0-4e4f-8fc2-ac4432eb4922.gif)
 
 __Deep Dream__ - This process enhances latent patterns within an input image.
 
 
-![](../../img/71b60ed7-0c86-4b6f-8667-6a14926d5f33.gif)
+![](/img/71b60ed7-0c86-4b6f-8667-6a14926d5f33.gif)
 
 __Style Transfer__ - This combines two images, using the content of one image and the style of another to render a unique combination of the two.
 
 
-![](../../img/111af205-83c1-495a-a9bc-ccac52cb96cf.png)
+![](/img/111af205-83c1-495a-a9bc-ccac52cb96cf.png)
 
 __Texture Generation__ - Very similar to style transfer, this process lacks a content image and thus generates abstract imagery.
 

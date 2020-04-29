@@ -15,14 +15,14 @@
   ],
   "Slug": "deblurring_with_tensorflow",
   "Section": "post",
-  "thumbnail": "../../img/c12be1c4-d391-4845-ab6b-382ee969182d.png",
+  "thumbnail": "/img/c12be1c4-d391-4845-ab6b-382ee969182d.png",
   "comments": true
 }
 
-![Blurred Image](../../img/c12be1c4-d391-4845-ab6b-382ee969182d.png)
+![Blurred Image](/img/c12be1c4-d391-4845-ab6b-382ee969182d.png)
 Blurred Image
 
-![Deblurred Image](../../img/d4624b4c-77c9-416f-8521-1854ef739551.png)
+![Deblurred Image](/img/d4624b4c-77c9-416f-8521-1854ef739551.png)
 Deblurred Image
 
 Recently, Google open-sourced a toolkit called [TensorFlow](https://www.tensorflow.org/) which provides a platform for neural networks. It provides a native core written in C, and many examples written in Python. Although the architecture is extensible and will hopefully will be usable from Java/Scala application code in the future, I took some time recently to evaluate it using Python to perform deconvolutions (a.k.a. deblurring), the same task I [recently wrote about](https://blog.simiacryptus.com/2015/07/fun-with-deconvolutions-and.html) using my own NN library.

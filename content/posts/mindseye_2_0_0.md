@@ -102,6 +102,6 @@ The Javascript library powering that animation is implemented in Scala JS, which
 
 Partially inspired by the recent release of [OpenAI Microscope](https://openai.com/blog/microscope/), I created a variety of notebooks which highlight the activity of a single neuron at a time in renderings. (These can be viewed at [examples.deepartist.org](http://examples.deepartist.org/)) This can either be iterated over in arbitrary numeric order, or sorted by how closely they match a given image. 
 
-![](../../img/e943b3b3-ea57-450d-b405-ef3984e8df76.gif)
+![](/img/e943b3b3-ea57-450d-b405-ef3984e8df76.gif)
 
 These single-neuron patterns can make an interesting base to select from when making new works, as some of these infinitely zooming animations. I think there is a funny similarity between the thumbnails of these ants and the results of the neuron surveys - both display an interesting variety of forms, like biological samples to be cataloged. I hope you have as much fun exploring them as I have had!

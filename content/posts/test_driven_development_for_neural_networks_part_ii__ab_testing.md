@@ -13,7 +13,7 @@
   ],
   "Slug": "test_driven_development_for_neural_networks_part_ii__ab_testing",
   "Section": "post",
-  "thumbnail": "../../img/5e804747-77dd-4c2b-b63f-74368594c2cc.png",
+  "thumbnail": "/img/5e804747-77dd-4c2b-b63f-74368594c2cc.png",
   "comments": true
 }
 
@@ -44,6 +44,6 @@ Just in the 12 example strategies listed above, we could easily define 72 separa
 
 So now we can run all our code with test cases, in a variety of setups, each producing a detailed report, with minimal effort. In addition to testing, documentation, and demonstration, this is an ideal platform to support an AB testing process. By looking at the results for a variety of problems solved identically except for one given change, we can determine how effective various options are in various situations. For example, this [test report](https://github.com/SimiaCryptus/MindsEye/blob/3053e759f8cf0921157fe24df80f4a1e90069c00/reports/com/simiacryptus/mindseye/labs/matrix/OptimizerComparison/CompareTextbook/classification.md) compares various optimization methods on a particular problem, resulting in the following graph:
 
-![](../../img/5e804747-77dd-4c2b-b63f-74368594c2cc.png)
+![](/img/5e804747-77dd-4c2b-b63f-74368594c2cc.png)
 
 This completes our review of the testing strategy for MindsEye. Using this highly-leveraged framework, we can ensure that every component, and any new ones, are well tested with accurate documentation.

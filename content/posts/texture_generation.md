@@ -11,7 +11,7 @@
   ],
   "Slug": "texture_generation",
   "Section": "post",
-  "thumbnail": "../../img/e88bc0c7-e00d-461f-88a7-13ffcc818674.png",
+  "thumbnail": "/img/e88bc0c7-e00d-461f-88a7-13ffcc818674.png",
   "comments": true
 }
 
@@ -30,25 +30,25 @@ In more detail:
     1. Criteria in (a) and (b) can be mixed by using a signed linear mix
 1. After all steps of the iteration are completed, the result is saved, the canvas is enlarged via bicubic scaling, and the process returns to step 2
 
-![](../../img/696734cc-1548-4a30-ae22-1da558de04ed.png)
+![](/img/696734cc-1548-4a30-ae22-1da558de04ed.png)
 
 Step 0/1 - Initial Painting and Style Transfer
 
-![](../../img/7e0b3635-f470-482c-bd43-6d3ead972fc8.png)
+![](/img/7e0b3635-f470-482c-bd43-6d3ead972fc8.png)
 
 Step 2 - Pattern Enhancement
 
-![](../../img/2b1c1144-8bb8-4a1f-9e01-292f0b62bf28.png)
+![](/img/2b1c1144-8bb8-4a1f-9e01-292f0b62bf28.png)
 
 Step 3, etc - Enlarge and Repeat
 
 This is very similar to the classic style transfer algorithm discussed in the paper here, which we’ve also taken some steps to reproduce. The process is very similar to that detailed above, but we also use a distance metric to a “content” image to guide our painting process. This largely depends on the weighting between the style criteria and the content criteria. Assorted examples of the product follows:
 
-![](../../img/c11eeacb-8336-4e32-8f4f-3137223180b3.png)
-![](../../img/51bf1a58-ae2c-4d30-9aa6-e9cb5a6a6b53.png)
-![](../../img/9be29f47-4aa3-4d96-90da-fa5f92ae96af.png)
-![](../../img/dd67054e-ea55-40e3-81da-87c4af5402b8.png)
-![](../../img/e88bc0c7-e00d-461f-88a7-13ffcc818674.png)
+![](/img/c11eeacb-8336-4e32-8f4f-3137223180b3.png)
+![](/img/51bf1a58-ae2c-4d30-9aa6-e9cb5a6a6b53.png)
+![](/img/9be29f47-4aa3-4d96-90da-fa5f92ae96af.png)
+![](/img/dd67054e-ea55-40e3-81da-87c4af5402b8.png)
+![](/img/e88bc0c7-e00d-461f-88a7-13ffcc818674.png)
 
 Well, I hope you found this interesting! If you’d like to generate some artwork of your own, it is easy to clone and run! The notebooks used in this post are here and here; all that is required is Java, CUDA, and CuDNN! Look for my next post where I will discuss running these applications on the AWS cloud, leveraging the Deep Learning Base AMI and P3 gpu-accelerated instances...
 

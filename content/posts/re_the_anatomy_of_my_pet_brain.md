@@ -13,7 +13,7 @@
   ],
   "Slug": "re_the_anatomy_of_my_pet_brain",
   "Section": "post",
-  "thumbnail": "../../img/c2550ef7-e2fb-4d7f-b54d-82d97e3c1fb2.png",
+  "thumbnail": "/img/c2550ef7-e2fb-4d7f-b54d-82d97e3c1fb2.png",
   "comments": true
 }
 

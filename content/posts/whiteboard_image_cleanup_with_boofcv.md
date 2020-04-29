@@ -11,7 +11,7 @@
   ],
   "Slug": "whiteboard_image_cleanup_with_boofcv",
   "Section": "post",
-  "thumbnail": "../../img/f01a54bf-5838-445c-808d-ec26de3af99e.png",
+  "thumbnail": "/img/f01a54bf-5838-445c-808d-ec26de3af99e.png",
   "comments": true
 }
 
@@ -33,11 +33,11 @@ I will illustrate steps of this [CV processing workflow](https://github.com/acha
 
 The process will convert this image:
 
-![](../../img/4623a01d-1e3c-4ff9-8141-b82f73873e81.png)
+![](/img/4623a01d-1e3c-4ff9-8141-b82f73873e81.png)
 
 Into an image like this:
 
-![](../../img/f01a54bf-5838-445c-808d-ec26de3af99e.png)
+![](/img/f01a54bf-5838-445c-808d-ec26de3af99e.png)
 
 At the end of the pipeline we have an image that is far more appropriate for online use, with pure colors and whites and an intelligent region selection. This is just a rough and naive approach that I came up with as a milestone towards further research, and commercial apps are going to do a better job, but I could see this code being useful if I for some reason had a pile of whiteboard photos on my hard drive.
 

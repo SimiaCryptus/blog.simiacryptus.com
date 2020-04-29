@@ -4,6 +4,7 @@
   "Keywords": [
   ],
   "Tags": [
+    "STM"
   ],
   "Slug": "restm",
   "Section": "projects",

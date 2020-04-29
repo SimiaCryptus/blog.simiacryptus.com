@@ -13,7 +13,7 @@
   ],
   "Slug": "deepartistorg_release_10",
   "Section": "post",
-  "thumbnail": "../../img/618be29e-aef5-492a-ba58-3000d8665182.gif",
+  "thumbnail": "/img/618be29e-aef5-492a-ba58-3000d8665182.gif",
   "comments": true
 }
 
@@ -72,7 +72,7 @@ We are now ready to run our first project. To simplify things, let’s run a ver
 
 From here, see and run more involved jobs from [examples.deepart.org](http://examples.deepart.org/).
 
-![](../../img/6b7a20ae-f81f-4e82-9d58-34a6f1953e8d.png)
+![](/img/6b7a20ae-f81f-4e82-9d58-34a6f1953e8d.png)
 
 ### Advanced Operation
 
@@ -134,35 +134,35 @@ The basic setup for a deep painting is that you have a canvas, which can be modi
 
 A pipeline is a pre-trained deep vision network which is loaded and made available as a series of image processing layers. Each layer builds on the last to extract higher-level details from the source image. This can be illustrated by this example which surveys the sequence of layers in the VGG19 pipeline, using each layer to reconstruct a target signal.
 
-![](../../img/bebe99ad-56ec-4066-957a-25a3dc4c99d1.gif)
+![](/img/bebe99ad-56ec-4066-957a-25a3dc4c99d1.gif)
 
 #### Operators - Signal Matchers and Enhancers
 
 You can also configure operators, which define how close a signal is to the objective. This objective may be some kind of “similarity measure” to compute how close one image is to another, and many such measures exist; these approach zero. Others simply seek to increase a measure, for example rms “power” as used in DeepDream, possibly with some cutoff before infinity. A survey example of them displays the varied effects:
 
-![](../../img/c83f2d58-c3b6-4718-967d-20919d98d29a.gif)
+![](/img/c83f2d58-c3b6-4718-967d-20919d98d29a.gif)
 
 #### Seed Canvas - Noise, Plasma, Image
 
 When a painting process is begun, there must be some data on the canvas to start with. Interestingly, a completely blank canvas produces poor results, due to something called “symmetry breaking”. There are three main types of seed used in deepartist.org: Noise, Plasma, or Image. Noise is simple random white noise, which can be scaled and offset. (For that matter, scaling and offset syntax is available for all image input urls) Plasma is a simple algorithmic texture that resembles a randomly-colored cloud. An actual image can also be given, either as an upload or as a literal url. This example displays a survey of these seed types when used to paint with the same texture parameters:
 As you may note, starting from the image results in something that looks like style transfer. This isn’t so much style transfer as warping the content image until it resembles the desired style. Among other differences, it tends to be deterministic - if you run it 3 times, you get nearly the same 3 results.
 
-![](../../img/bcd20b5f-4acd-4c66-ae18-ff097ebac6e6.gif)
+![](/img/bcd20b5f-4acd-4c66-ae18-ff097ebac6e6.gif)
 
 #### Resolution Sequence Texture Generation/Operative Resolutions
 
 Another important factor in the painting process is what resolution we perform it at. As anyone who’s fallen from orbit knows, things look a lot different depending on how far away you are. This variety manifests itself in out painting process by the operative resolution, of what resolution we do a painting operation at. You can see the variety caused by the same painting parameters being performed at small scale, at large scale, and using intermittent stages in this example:
 Growing a texture from a smaller image results in a naturally more complex and varied large structure, whereas initial painting using a higher resolution typically produces a more uniform look.
 
-![](../../img/36ada47b-09bb-4e9c-be0e-9f1fbaec8063.gif)
+![](/img/36ada47b-09bb-4e9c-be0e-9f1fbaec8063.gif)
 
 #### View Layers
 
 This can be further modified by attaching additional filters to the vision pipeline layers, such as in these examples:
-1. Tiled Texture Generation - By wrapping the canvas around itself to enlarge it, we learn to paint regardless of these wrapping boundaries, and will get a tileable image. ![](../../img/1dde3d05-d225-420d-94f1-fdb1c4692429.gif)
-1. Kaleidoscope: Rotational Symmetry and Color Permutations - A layer which reflects and rotates space (and color space) can produce an image with a guaranteed symmetry. This can be combined with the tiling layer. ![](../../img/ee374398-0833-46ec-a848-94b48f03f908.gif)
+1. Tiled Texture Generation - By wrapping the canvas around itself to enlarge it, we learn to paint regardless of these wrapping boundaries, and will get a tileable image. ![](/img/1dde3d05-d225-420d-94f1-fdb1c4692429.gif)
+1. Kaleidoscope: Rotational Symmetry and Color Permutations - A layer which reflects and rotates space (and color space) can produce an image with a guaranteed symmetry. This can be combined with the tiling layer. ![](/img/ee374398-0833-46ec-a848-94b48f03f908.gif)
 Additionally, the resulting canvas can be post-processed by any other function. One fun example of this is the stereogram generator.
-![](../../img/da74d9a2-5c95-4f55-8962-0108c28a970f.gif)
+![](/img/da74d9a2-5c95-4f55-8962-0108c28a970f.gif)
 
 ### Style Transfer
 
@@ -172,19 +172,19 @@ Depending on your religion, you may wish to paint a painting to resemble some ob
 
 Content images can be reconstructed by signal matching using any vision layer, in the same manner as style matching. Each level higher conveys less local information, such as color, and more higher-level information such as patterns. You can see this in the following survey, which uses each layer in a pipeline to reconstruct target content without any further modifiers.
 
-![](../../img/f9f3e56e-f61e-40c0-9f56-0ae3207e05c2.gif)
+![](/img/f9f3e56e-f61e-40c0-9f56-0ae3207e05c2.gif)
 
 #### Simple Style Transfer
 
 When these content operators are combined with style operators, we can demonstrate classic deep style transfer, such as in this example:
 
-![](../../img/8439dcb8-dd99-449a-be66-2b1e468c2139.gif)
+![](/img/8439dcb8-dd99-449a-be66-2b1e468c2139.gif)
 
 #### High-resolution Multi-phase style transfer
 
 For high-definition results, multiple phases of style transfer processes can be used while progressively enlarging the canvas. By fine-tuning the parameters for each resolution, we can gain better control over the result.
 
-![](../../img/5aa27a64-6b36-47fa-8b1e-9e63cb8a0c63.gif)
+![](/img/5aa27a64-6b36-47fa-8b1e-9e63cb8a0c63.gif)
 
 ### Animations
 
@@ -198,16 +198,16 @@ A variety of animations have already been shown, wherein we survey a variety of 
 
 Another type of animation is to sweep a range of parameters. One example provided is a style transfer sweep from one style to another:
 
-![](../../img/618be29e-aef5-492a-ba58-3000d8665182.gif)
+![](/img/618be29e-aef5-492a-ba58-3000d8665182.gif)
 
 #### Determinism and Jitter
 
 Why start with white noise when we do a style transfer? Wouldn’t it be faster to start with the content image itself and change it to match the desired style? One reason is that this heavily biases the result in a way you will have trouble controlling, but another is that the result is deterministic. If we start with noise, there is an inherent randomness to our resulting image that makes it unique. If we use this randomness to produce an animation, we get a unique jittery effect:
 
-![](../../img/e677a8ec-ba9b-44af-ab34-d56dd15cd130.gif)
+![](/img/e677a8ec-ba9b-44af-ab34-d56dd15cd130.gif)
 
 This can also be combined with kaleidoscopic textures:
 
-![](../../img/be5c5fc4-750e-4786-aadc-1442a1e88bf7.gif)
+![](/img/be5c5fc4-750e-4786-aadc-1442a1e88bf7.gif)
 
 That's the bag of tricks contained in the first release. Enjoy!
