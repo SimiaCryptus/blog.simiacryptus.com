@@ -1,0 +1,67 @@
+baseURL = "http://simiacryptus.com/"
+languageCode = "en-us"
+title = "Simia Cryptus Software"
+theme = "mainroad"
+#sectionPagesMenu = "main"
+
+paginate = "10" # Number of posts per page
+disqusShortname = "blog-simiacryptus-com" # Enable Disqus comments by entering your Disqus shortname
+googleAnalytics = "UA-111881094-2" # Enable Google Analytics by entering your tracking id
+
+[Author] # Used in authorbox
+  name = "Andrew Charneski"
+  bio = "Andrew Charneski is a Big Data Engineer who works on Artificial Intelligence Research as an Open Source Hobby."
+  #avatar = "img/avatar.png"
+
+[Params]
+  subtitle = "Artificial Intelligence and Big Data"
+  description = "Simia Cryptus Software" # Site description. Used in meta description
+  copyright = "Andrew Charneski" # Footer copyright holder, otherwise will use site title
+  opengraph = true # Enable OpenGraph if true
+  twitter_cards = false # Enable Twitter Cards if true
+  readmore = true # Show "Read more" button in list if true
+  authorbox = true # Show authorbox at bottom of pages if true
+  toc = true # Enable Table of Contents
+  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+  post_meta = ["date", "categories", "translations"] # Order of post meta information
+  mainSections = ["posts", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "2006-01-02" # Change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  highlightColor = "#e22d30" # Override highlight color
+  #customCSS = ["css/custom.css"] # Include custom CSS files
+  #customJS = ["js/custom.js"] # Include custom JS files
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "right"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  linkedin = "andrewcharneski"
+  github = "SimiaCryptus"
+  email = "andrew@simiacryptus.com"
+
+[[menu.main]]
+  name = "Posts"
+  weight = -1000
+  identifier = "posts"
+  url = "/"
+
+[[menu.main]]
+  name = "Projects"
+  weight = -1000
+  identifier = "projects"
+  url = "/projects/"
+
+#[[menu.main]]
+#  name = "Release 2.0"
+#  url = "http://code.simiacrypt.us/release/2.0.0/all-projects/"
+#  weight = "100"
