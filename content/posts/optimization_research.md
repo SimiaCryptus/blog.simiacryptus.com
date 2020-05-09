@@ -14,7 +14,7 @@
   "Slug": "optimization_research",
   "Section": "post",
   "comments": true,
-  "thumbnail": "../../static/img/4be6c5a1-02be-4c96-bca7-a1aef81a456c.png"
+  "thumbnail": "/img/4be6c5a1-02be-4c96-bca7-a1aef81a456c.png"
 }
 
 Now that I’ve cleaned up the testing and documentation of MindsEye, I have been able to re-focus on why I started writing it: Optimization Algorithm Research. In the course of playing with this code I have tried countless ideas, most of which taught me though failure instead of success... However I do have two ideas, fully implemented and demonstrated in MindsEye, that I’d like to introduce today: Recursive Subspace Optimization allows deep networks to be trained effectively, and Quadratic Quasi-Newton enhances L-BFGS with a quadratic term on the line-search path.
@@ -61,7 +61,7 @@ We tested these methods by training a 3-layer convolutional network against the 
 1. Quadratic Quasi-Newton with normalized network
 1. Recursive Subspace with non-normalized network, using QQN as the inner optimizer.
 
-![](../../static/img/4be6c5a1-02be-4c96-bca7-a1aef81a456c.png)
+![](/img/4be6c5a1-02be-4c96-bca7-a1aef81a456c.png)
 
 Initial results show significant benefits over standard L-BFGS, though much of the difference seen is accounted for by simply adding a strong line search to the standard L-BFGS algorithm. Over time as the test suite is expanded I should have much better data across many problems and variants to compare. Stay tuned for more!
 

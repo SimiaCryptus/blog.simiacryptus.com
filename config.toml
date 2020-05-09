@@ -1,19 +1,25 @@
 baseURL = "http://simiacryptus.com/"
 languageCode = "en-us"
+name = "SimiaCryptus"
 title = "Simia Cryptus Software"
 theme = "mainroad"
-#sectionPagesMenu = "main"
 
 paginate = "10" # Number of posts per page
 disqusShortname = "blog-simiacryptus-com" # Enable Disqus comments by entering your Disqus shortname
 googleAnalytics = "UA-111881094-2" # Enable Google Analytics by entering your tracking id
 
-[Author] # Used in authorbox
+[Author]
   name = "Andrew Charneski"
   bio = "Andrew Charneski is a Big Data Engineer who works on Artificial Intelligence Research as an Open Source Hobby."
-  #avatar = "img/avatar.png"
+  avatar = "img/avatar.jpg"
+
+[original]
+  name = "SimiaCryptus Software"
+  homepage = "https://simiacryptus.com/"
+  repo = "https://github.com/SimiaCryptus/blog.simiacryptus.com/"
 
 [Params]
+  editURL = "https://github.com/SimiaCryptus/blog.simiacryptus.com/edit/master/content/"
   subtitle = "Artificial Intelligence and Big Data"
   description = "Simia Cryptus Software" # Site description. Used in meta description
   copyright = "Andrew Charneski" # Footer copyright holder, otherwise will use site title
@@ -33,11 +39,13 @@ googleAnalytics = "UA-111881094-2" # Enable Google Analytics by entering your tr
   #customCSS = ["css/custom.css"] # Include custom CSS files
   #customJS = ["js/custom.js"] # Include custom JS files
 
+[outputs]
+  home = [ "HTML", "RSS", "JSON"]
+
 [Params.sidebar]
-  home = "right" # Configure layout for home page
-  list = "right"  # Configure layout for list pages
-  single = false # Configure layout for single pages
-  # Enable widgets in given order
+  home = "right"
+  list = "right"
+  single = false
   widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
 
 [Params.widgets]
@@ -49,6 +57,21 @@ googleAnalytics = "UA-111881094-2" # Enable Google Analytics by entering your tr
   github = "SimiaCryptus"
   email = "andrew@simiacryptus.com"
 
+[[Params.widgets.social.custom]]
+  title = "Thingiverse"
+  url = "https://www.thingiverse.com/simiacryptus/designs"
+  icon = "thingiverse.svg"
+
+[[Params.widgets.social.custom]]
+  title = "StackExchange"
+  url = "https://stackexchange.com/users/373934/andrew-charneski"
+  icon = "stackexchange.svg"
+
+[[Params.widgets.social.custom]]
+  title = "Medium"
+  url = "https://medium.com/@acharneski"
+  icon = "medium.svg"
+
 [[menu.main]]
   name = "Posts"
   weight = -1000
@@ -57,11 +80,12 @@ googleAnalytics = "UA-111881094-2" # Enable Google Analytics by entering your tr
 
 [[menu.main]]
   name = "Projects"
-  weight = -1000
+  weight = -100
   identifier = "projects"
   url = "/projects/"
 
-#[[menu.main]]
-#  name = "Release 2.0"
-#  url = "http://code.simiacrypt.us/release/2.0.0/all-projects/"
-#  weight = "100"
+[[menu.main]]
+  name = "Gallery"
+  weight = 0
+  identifier = "gallery"
+  url = "/gallery/"
