@@ -13,7 +13,8 @@
  "authorbox": false
 }
 
-1. [examples.deepartist.org](http://examples.deepartist.org/)
+1. [gallery.deepartist.org](http://gallery.deepartist.org/) - Image Gallery
+1. [examples.deepartist.org](http://examples.deepartist.org/) - Example Notebooks (Detailed Process Reports)
 1. [acharneski @ shutterstock](https://www.shutterstock.com/g/andrew+charneski)
 
 <!--more-->
